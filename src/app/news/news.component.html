@@ -1,21 +1,51 @@
 <div class="container">
-<p>the last news from newsFirm !</p>
+    <h1>the last news from newsFirm !</h1>
 
-<div  *ngFor="let article of articles ">
-  <div class="newsStyle">
- <div>
-   <ul>
-   <li class="Article" >
-    <ol>
-          <h3>{{article.title}}</h3>
-          <p>{{article.content}}</p>
-          <a href="{{article.url}}"> link </a>
-  <!--<img src="{{article.urlToImage}}">
-            {{article.publisehdAt}}-->
-   </ol>
-</li>
-</ul>
-</div>
-</div>
-</div>
+    <div  *ngFor="let article of articles ">
+      <div class="grid">
+        <div>
+          <ul>
+            <li class="Article" >
+              <ol>
+                  <h3>{{article.title}}</h3>
+                  <p>{{article.content}}</p>
+                  <a href="{{article.url}}"> link </a>
+                      <!--<img src="{{article.urlToImage}}">
+                      {{article.publisehdAt}}-->
+              </ol>
+            </li>
+          </ul>
+        </div>
+<!--second bloc -->
+                <div>
+                  <ul>
+                    <li class="Article2">
+                      <ol>
+                        <h3></h3>
+                        <p></p>
+                        <a href=""> link </a>
+                        <!--<img src="{{article.urlToImage}}">
+                                      {{article.publisehdAt}}-->
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+
+<!--troisieme bloc -->
+                <div>
+                  <ul>
+                    <li class="Article">
+                      <ol>
+                        <h3>{{article.author}}</h3>
+                        <p></p>
+                        <a href=""> link </a>
+                        <!--<img src="{{article.urlToImage}}">
+                                      {{article.publisehdAt}}-->
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+
+      </div>
+    </div>
 </div>

@@ -1,3 +1,14 @@
 
-.Article-li{overflow:hidden;-webkit-transition:all 2s ease-out;-o-transition:all 2s ease-out;transition:all 2s ease-out}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid div:nth-child(even){
+  background-color: aquamarine;
+}
+
+.grid div:nth-last-child(odd){
+  background-color: aliceblue;
+}
 
